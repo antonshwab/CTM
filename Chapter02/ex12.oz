@@ -1,3 +1,6 @@
+% Перевод try s1 finally s2 end в try/catch конструкцию так, чтобы s1 и s2 встречались только по одному разу.
+% Если в s1 встречает эксепшен, то он бробрасывается дальше.
+
 % 
 declare WasEx in
 try
@@ -26,6 +29,8 @@ catch X then
       {Browse '2'}
    end
 end
+
+%%%%%
 
 declare WasEx in
 try
